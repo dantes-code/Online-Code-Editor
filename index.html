@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <p class="brand">Online Code Editor</p>
+    </div>
+    <div class="container">
+        <div class="htmlCode">
+            <h1>HTML</h1>
+            <textarea oninput="showPreview()" id="html" placeholder="Type Your HTML Code Here"></textarea>
+        </div>
+        <div class="cssCode">
+            <h1>CSS</h1>
+            <textarea oninput="showPreview()" id="css" placeholder="Type Your CSS Code Here"></textarea>
+        </div>
+        <div class="jsCode">
+            <h1>JS</h1>
+            <textarea oninput="showPreview()" id="js" placeholder="Type Your JavaScript Code Here"></textarea>
+        </div>
+    </div>
+    <div class="resultPage">
+        <iframe id="preview-window" title="Results" width="1900" height="400"></iframe>
+    </div>
+    <script src="logic.js" type="text/javascript"></script>
+</body>
+</html>
